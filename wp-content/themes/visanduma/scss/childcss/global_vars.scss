@@ -1,0 +1,33 @@
+$white: #fff;
+$black: #000;
+$dark: #003148;
+$light: #cfcfcf;
+$blue: #1882b4;
+$yellow: #ffeb3b;
+$lightgrey: #9ab4d3;
+$blue: #3369a5;
+$yellow: #d4a847;
+$altrenative: #3c1300;
+
+
+@mixin flex($type, $v-align, $h-align) {
+  @if ($type == "inline") {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  } @else {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  @if ($v-align != "null") {
+    -webkit-box-align: $v-align;
+    -ms-flex-align: $v-align;
+    align-items: $v-align;
+  }
+  @if ($h-align != "null") {
+    -webkit-box-pack: $h-align;
+    -ms-flex-pack: $h-align;
+    justify-content: $h-align;
+  }
+}

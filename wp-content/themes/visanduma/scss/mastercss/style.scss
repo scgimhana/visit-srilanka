@@ -1,0 +1,28 @@
+/*!
+ Theme Name:   Visit Sri Lanka
+ Theme URI:    https://www.visanduma.lk
+Github Theme URI: https://github.com/Visanduma/visanduma-wwordpress.git
+ Description:  Visit SriLanka Theme
+ Author:       Visanduma R&D Solutions
+ Author URI:   https://www.visanduma.com
+ Version:      2.0.4
+ License: MIT
+ Text Domain: Visit SriLanka
+ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+ This theme is licensed under the MIT.
+ You are not allowed to directly make alteration to the code. Visanduma R&D Solutions
+
+*/
+@charset "UTF-8";
+/* ==== Global variables ==== */
+@import "../childcss/global_vars.scss";
+/* ==== Common Styling to use globally ==== */
+@import "../childcss/common.scss";
+/* ==== Header styles header ==== */
+@import "../childcss/header.scss";
+/* ==== Footer styles footer ==== */
+@import "../childcss/footer.scss";
+/* ==== Homepage styles page-home.php ==== */
+@import "../childcss/home.scss"; 
+ 

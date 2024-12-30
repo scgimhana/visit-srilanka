@@ -1,0 +1,40 @@
+footer{
+    background: $dark;
+    padding: 10px;
+    .social-links{
+        position: fixed;
+        height: 150px;
+        width: 50px;
+        top: calc(50% - 75px);
+        right: 0px;
+        border-radius: 5px 0px 0px 5px;
+        overflow: hidden;
+        a{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            svg{
+                fill: white;
+            }
+            &.facebook{
+                background:#4267B2;
+            }
+            &.mail{
+                background:#FF0000;
+            }
+            &.whatsapp{
+                background:#128C7E;
+            }
+        }
+    }
+    .footer-txt{
+        letter-spacing: 6px;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 15px;
+        color: $light;
+        text-align: center;
+    }
+}

@@ -1,0 +1,327 @@
+/*!
+ Theme Name:   Visit Sri Lanka
+ Theme URI:    https://www.visanduma.lk
+Github Theme URI: https://github.com/Visanduma/visanduma-wwordpress.git
+ Description:  Visit SriLanka Theme
+ Author:       Visanduma R&D Solutions
+ Author URI:   https://www.visanduma.com
+ Version:      2.0.4
+ License: MIT
+ Text Domain: Visit SriLanka
+ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+ This theme is licensed under the MIT.
+ You are not allowed to directly make alteration to the code. Visanduma R&D Solutions
+
+*/
+/* ==== Global variables ==== */
+/* ==== Common Styling to use globally ==== */
+@import url("http://fonts.cdnfonts.com/css/trench");
+/* ==== Header styles header ==== */
+.header-wrapper {
+  background: #003148;
+  height: 70px;
+  left: 0;
+  right: 0;
+  top: 0; }
+  .header-wrapper .navbar-brand {
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    color: #d4a847; }
+    .header-wrapper .navbar-brand span {
+      color: #cfcfcf;
+      font-family: 'WindSong', cursive;
+      font-size: 35px;
+      margin-left: 10px;
+      font-weight: bold; }
+  .header-wrapper .navbar-nav .nav-item + .nav-item {
+    margin-left: 50px; }
+  .header-wrapper .navbar-nav .nav-item .nav-link {
+    padding: 0px;
+    color: #cfcfcf;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none; }
+
+/* ==== Footer styles footer ==== */
+footer {
+  background: #003148;
+  padding: 10px; }
+  footer .social-links {
+    position: fixed;
+    height: 150px;
+    width: 50px;
+    top: calc(50% - 75px);
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    overflow: hidden; }
+    footer .social-links a {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none; }
+      footer .social-links a svg {
+        fill: white; }
+      footer .social-links a.facebook {
+        background: #4267B2; }
+      footer .social-links a.mail {
+        background: #FF0000; }
+      footer .social-links a.whatsapp {
+        background: #128C7E; }
+  footer .footer-txt {
+    letter-spacing: 6px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    color: #cfcfcf;
+    text-align: center; }
+
+/* ==== Homepage styles page-home.php ==== */
+.carousel .carousel-inner {
+  position: relative; }
+  .carousel .carousel-inner .carousel-caption {
+    position: absolute;
+    z-index: 9;
+    padding: 0px;
+    top: 50%;
+    margin-top: -55px; }
+    .carousel .carousel-inner .carousel-caption h1 {
+      color: white;
+      font-size: 50px;
+      padding: 20px 40px;
+      font-family: 'Alegreya Sans', sans-serif;
+      border: 5px solid white;
+      text-transform: uppercase;
+      letter-spacing: 30px;
+      margin-bottom: 0px; }
+.carousel .carousel-indicators {
+  z-index: 999; }
+  .carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+    border: none; }
+    .carousel .carousel-indicators button + button {
+      margin-left: 10px; }
+.carousel .carousel-item {
+  width: 100%;
+  height: 700px; }
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #003148;
+  font-family: 'Alegreya Sans', sans-serif; }
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  color: #003148;
+  font-family: 'Alegreya Sans', sans-serif; }
+
+p {
+  font-size: 15px;
+  font-family: 'Alegreya Sans', sans-serif; }
+
+.main-btn {
+  border: 1px solid #003148;
+  border-radius: 10px;
+  padding: 7px 30px;
+  font-size: 16px;
+  color: #003148;
+  font-family: 'Alegreya Sans', sans-serif;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+  background: white;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in; }
+  .main-btn:hover, .main-btn:focus, .main-btn:active {
+    background: #003148;
+    color: white;
+    transition: all 0.4s ease-in; }
+
+.shadow-card {
+  padding: 40px 30px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 20px #cccccc67;
+  text-align: center;
+  height: 100%;
+  border-radius: 5px; }
+  .shadow-card .title {
+    padding-top: 20px;
+    font-size: 21px;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 15px; }
+  .shadow-card .text {
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .gallery .image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px #cccccc67; }
+  .gallery .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; }
+  .gallery .image:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+    filter: brightness(80%);
+    z-index: 1; }
+  .gallery.filterable .image {
+    display: none; }
+    .gallery.filterable .image.show {
+      display: block; }
+
+.loading {
+  background-image: url("http://jquery.eisbehr.de/lazy/images/loading.gif");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center; }
+  .img-modal .modal-img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 100vh; }
+  .img-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer; }
+
+.slick-slide {
+  margin: 0 20px; }
+
+ul.slick-dots {
+  margin: 20px auto 10px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  ul.slick-dots li {
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background: #00000075;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease-in; }
+    ul.slick-dots li.slick-active {
+      background: #000;
+      transition: all 0.4s ease-in; }
+    ul.slick-dots li + li {
+      margin-left: 10px; }
+    ul.slick-dots li button {
+      display: none; }
+
+.travel-card {
+  height: 300px;
+  text-decoration: none;
+  color: #cfcfcf;
+  font-family: 'Alegreya Sans', sans-serif;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px #cccccc67; }
+  .travel-card:hover, .travel-card:active, .travel-card:focus {
+    color: #cfcfcf;
+    transition: all 1.4s ease-in; }
+    .travel-card:hover .travel-card-inner-sec, .travel-card:active .travel-card-inner-sec, .travel-card:focus .travel-card-inner-sec {
+      transition: all 1.4s ease-in; }
+      .travel-card:hover .travel-card-inner-sec .content, .travel-card:active .travel-card-inner-sec .content, .travel-card:focus .travel-card-inner-sec .content {
+        transition: all 1.4s ease-in;
+        height: auto; }
+  .travel-card .travel-card-inner-sec {
+    transition: all 1.4s ease-in;
+    position: absolute;
+    padding: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .travel-card .travel-card-inner-sec .title {
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
+      margin-bottom: 15px; }
+    .travel-card .travel-card-inner-sec .content {
+      height: 0px;
+      overflow: hidden;
+      font-size: 20px;
+      line-height: 25px;
+      transition: all 1.4s ease-in;
+      text-align: center; }
+      .travel-card .travel-card-inner-sec .content span {
+        display: block;
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 15px; }
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #003148;
+  font-size: 15px;
+  font-family: 'Alegreya Sans', sans-serif; }
+  .contact-form input:active, .contact-form input:focus, .contact-form textarea:active, .contact-form textarea:focus {
+    box-shadow: 0 0 0 0.1rem rgba(0, 49, 72, 0.25); }
+
+.tour-single-mods .top-banner-sec {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.gallery-filter button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-family: 'Alegreya Sans', sans-serif;
+  opacity: 0.5;
+  color: #003148;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+  padding: 10px 5px; }
+  .gallery-filter button.active, .gallery-filter button:active, .gallery-filter button:focus, .gallery-filter button:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in; }
+  .gallery-filter button + button {
+    margin-left: 30px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+= = = = Seneview-Bootstrap Template v2.0 = = = =
+Info last updated: 10/10/2017
+
+Bootstrap version: 3.3.7
+Downloaded date: 09/10/2017
+
+Font Awesome version: 4.7.0
+Downloaded date: 09/10/2017
+
+ACF version: 4.4.5
+Downloaded date: 04/04/2016
+
+= = = Updates = = =
+[10/10/2017]
+* Added template-parts support
+* Removed css folder
+* Created a separate folder "vendor" for external dependencies such as bootstrap and font awesome etc...
+* Fully integrated SCSS with compression so the css output is minified
+* Search results page added "search.php"
+* Added GIT version controlling
+* Removed admin theme options
+
+[06/04/2016]
+* comments.php added
+* comments_walker.php added
+* functions.php file updated to include comments walker
+* single.php file updated to include comments on the bottom of the page
+
+[04/04/2016]
+* Home page template added /page-home.php
+* Theme options updated /theme-options/
+* Bootstrap core updated to 3.3.6
+* Font Awesome updated to 4.5.0
+* ACF updated from 4.3.9 to 4.4.5
+* /fonts folder updated with new Glyphicons Icons
+* /fonts folder updated with new FontAwesome Icons
+* /js folder updated with new Bootstrap JS files
+
+
+[09/03/2015]
+* Bootstrap core updated to 3.3.2
+* Fixed improper indentation on index.php header
+* Seneview-Bootstrap Template version control added
+* Font Awesome updated to 4.3.0
+
+
+[13/01/2015]
+* Bootstrap core updated to 3.3.1
+* Font Awesome integrated to Seneview-Bootstrap template
